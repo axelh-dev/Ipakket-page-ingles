@@ -1,0 +1,455 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 72.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.bottons-downloads {
+  color: white;
+  border-radius: 10px 0 0;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1000;
+  background-color: #000000;
+}
+.icons-download {
+  font-size: 28px;
+}
+.navbar-toggler span {
+  color: var(--color-primario);
+  font-weight: 700;
+}
+.img-google {
+  width: 30px;
+  height: 30px;
+  background: url("../assets/imgs/google-play-svgrepo-com.svg") no-repeat;
+  background-size: contain;
+}
+
+:root {
+  --color-primario: #f9a328;
+  --color-secundario: #2b3035;
+  --color-tercer: #ffffff;
+}
+
+.nav-link-color {
+  color: white !important;
+}
+
+.nav-link.active {
+  color: #f7a41d !important;
+}
+.navbar {
+  color: white;
+  height: 80px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--color-primario);
+  transition: color 0.3s ease-in-out;
+}
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-item .nav-link {
+  font-family: "Open Sans", sans-serif !important;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 700;
+}
+.navbar-collapse {
+  margin-right: 30px;
+}
+
+.navbar-toggler {
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  .navbar {
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex: inherit;
+  }
+}
+
+.container-fluid-header {
+  height: 100vh;
+  width: 100%;
+}
+
+.container-fluid-header-home {
+  background: url(../assets/imgs/fondo--home.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.font-home {
+  font-weight: 700;
+  color: var(--color-primario);
+}
+
+.img-home-ipakket {
+  background-image: url(../assets/imgs/img-home-ipakket.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home-page-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+}
+.home-page {
+  min-width: 300px;
+}
+
+@media (max-width: 771px) {
+  .home-page,
+  .home-page-container {
+    min-width: 300px;
+    padding: 10px !important;
+  }
+  .container-cat {
+    justify-content: space-around;
+  }
+}
+
+.contain-cat {
+  display: flex;
+  padding: 10px;
+  max-width: 180px;
+  width: 140px;
+  min-width: 120px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+}
+.contain-cat img {
+  height: 50px;
+}
+.container-video-ip p {
+  color: var(--color-primario);
+  z-index: 20;
+}
+/* 
+.video-sec-ipa{
+  -webkit-box-shadow: 0px 0px 156px 8px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 156px 8px rgba(255,255,255,1);
+  box-shadow: 0px 0px 156px 8px rgba(255,255,255,1);
+} */
+
+.video-section {
+  width: 100%;
+  height: 98vh;
+  background-color: var(--color-secundario);
+}
+.home-fondos {
+  width: 300px;
+  height: 300px;
+  background-color: #f9a328;
+  position: absolute;
+}
+
+.text-about-ipakket,
+.text-about-pacifi {
+  font-size: 1.4rem;
+}
+
+.list-benefics {
+  display: flex;
+  flex-direction: row;
+}
+
+#video-container iframe {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+
+.img-section-download {
+  border-radius: 0 10px 10px 0;
+  background: url(../assets/imgs/ipakket-apk.png) no-repeat center;
+  position: absolute;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+}
+.section-download {
+  background: url(../assets/imgs/ipakket-apkbk.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container-download {
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: var(--color-secundario);
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 600;
+}
+
+.benefics-item {
+  height: auto;
+  max-width: 300px;
+  text-align: center;
+  text-align: center;
+}
+
+.img-section-carrier {
+  width: 450px;
+  height: 450px;
+  background: url("../assets/imgs/carrier-ipakket.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-about-carrier {
+  max-width: 500px;
+}
+.btn-carrier {
+  padding: 10px 25px 10px 25px;
+  border: var(--color-secundario) solid 1px !important;
+}
+.container-carrier-botton {
+  margin-bottom: 5px;
+}
+
+.contain-requirements {
+  display: flex;
+  padding: 10px;
+  width: 60px;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+}
+.contain-requirements img i {
+  height: 40px;
+}
+.contain-requirements span {
+  position: absolute;
+  bottom: 3px;
+}
+.contain-requirements span {
+  position: absolute;
+  bottom: 3px;
+  font-weight: 600;
+}
+.img-cat {
+  position: absolute;
+  top: 3px;
+}
+.bi-truck {
+  position: absolute;
+  top: 5px;
+}
+
+.container-requirements > div:nth-child(1) {
+  background-color: #f9a328;
+}
+.container-requirements > div:nth-child(2) {
+  color: #ffffff;
+  background-color: #212121;
+}
+.container-requirements > div:nth-child(3) {
+  background-color: #00928f;
+}
+.container-requirements > div:nth-child(4) {
+  background-color: #ff0040;
+}
+
+.text-about-shops {
+  max-width: 550px;
+}
+
+.img-section-shops {
+  width: 450px;
+  height: 450px;
+  background: url(../assets/imgs/comercios-ipakket.png) no-repeat center;
+  background-size: contain;
+}
+.container-fluid-header-sp {
+  height: 117vh;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  /* .img-section-download {
+    width: 300px;
+    height: 300px;
+  } */
+  .img-section-carrier {
+    width: 300px;
+    height: 300px;
+  }
+  .img-section-shops {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 771px) {
+  .container-fluid-header-sp {
+    height: 144vh;
+  }
+  .container-fluid-header {
+    height: 120vh;
+  }
+  .section-about {
+    height: 160vh;
+  }
+  .video-section {
+    height: 50vh;
+  }
+  .container-fluid-header-home {
+    height: 100vh !important;
+  }
+}
+
+@media (max-width: 439px) {
+  .benefics-item {
+    text-align: center;
+  }
+}
+.contact-social {
+  height: 15vh;
+  width: 100%;
+}
+.bi-social {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.spikes {
+  position: relative;
+  background: var(--color-secundario);
+  height: 20vh;
+}
+
+.spikes::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: -0%;
+  bottom: 100%;
+  z-index: 10;
+  display: block;
+  height: 50px;
+  background-size: 50px 100%;
+  background-image: linear-gradient(
+      315deg,
+      var(--color-secundario) 30%,
+      transparent 25%
+    ),
+    linear-gradient(45deg, var(--color-secundario) 30%, transparent 25%);
+  background-position: 0 0;
+}
+.icons-social-about {
+  border-radius: 10px;
+  color: white;
+}
+
+.item {
+  opacity: 0;
+  transform: translateY(20px); /* Desplazamiento inicial */
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-shops .video {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container-shops {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 26px;
+}
+
+.section-shops {
+  background: url(../assets/imgs/img-ipakket-phone.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}

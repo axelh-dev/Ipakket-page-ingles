@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (scroll > aboutSectionTop - navbarHeight) {
         navbar.style.backgroundColor = "rgb(43,48,53)";
       } else {
-        navbar.style.backgroundColor = "rgb(43,48,53, .7)";
+        navbar.style.backgroundColor = "rgb(43,48,53, .1)";
       }
     } else {
       console.log("Elemento #section-about no encontrado");
@@ -58,10 +58,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // Event Listeners
   window.addEventListener("scroll", changeNavbarColor);
   window.addEventListener("scroll", checkVisibility);
-  document.addEventListener("scroll", navbarShrink);
 
   // Ejecutar funciones al cargar la página
 
   changeNavbarColor();
-  navbarShrink();
 });

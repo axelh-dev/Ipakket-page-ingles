@@ -93,11 +93,30 @@ body {
   width: 100%;
 }
 
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('../assets/videos/video-back.mp4') no-repeat center center/cover;
+  pointer-events: none;
+  z-index: 12;
+  object-fit: cover; 
+} 
+
 .container-fluid-header-home {
-  background: url(../assets/imgs/fondo--home.jpg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  position: relative;
   height: 100vh;
   width: 100%;
 }
@@ -115,6 +134,7 @@ body {
 }
 
 .home-page-container {
+  z-index: 13;
   background-color: rgba(255, 255, 255, 0.95);
   padding: 20px;
   border-radius: 10px;
@@ -151,27 +171,23 @@ body {
 .contain-cat img {
   height: 50px;
 }
-.container-video-ip p {
-  color: var(--color-primario);
-  z-index: 20;
-}
-/* 
-.video-sec-ipa{
-  -webkit-box-shadow: 0px 0px 156px 8px rgba(255,255,255,1);
-  -moz-box-shadow: 0px 0px 156px 8px rgba(255,255,255,1);
-  box-shadow: 0px 0px 156px 8px rgba(255,255,255,1);
-} */
 
-.video-section {
+.scooter-section {
   width: 100%;
   height: 98vh;
   background-color: var(--color-secundario);
 }
-.home-fondos {
-  width: 300px;
-  height: 300px;
-  background-color: #f9a328;
-  position: absolute;
+.container-video-ip  {
+  color: var(--color-tercer);
+}
+
+.img-section-scooter {
+  border-radius: 10px;
+  background: url(../assets/imgs/Scooter-img.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 80%;
 }
 
 .text-about-ipakket,

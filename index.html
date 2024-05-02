@@ -24,6 +24,7 @@
         rel="stylesheet">
 </head>
 
+
 <body class="position-relative  ">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark" id="mainNav"
@@ -174,17 +175,23 @@
                 <div class="text-scooter-1">
                     <h2><strong>Scooter Rental</strong></h2>
                     <h3>Discover Your Favorite Destinations:</h3>
-                    <p class="fs-4">Embark on an exciting urban adventure with our scooter rental service in New York, Boston, Chicago, Miami, and Washington. Each city has its own distinctive energy and charm, and our scooters will take you to explore them all!</p>
+                    <p class="fs-4">Embark on an exciting urban adventure with our scooter rental service in New York,
+                        Boston, Chicago, Miami, and Washington. Each city has its own distinctive energy and charm, and
+                        our scooters will take you to explore them all!</p>
                 </div>
                 <div class="text-scooter-2">
                     <h3><strong>How Does It Work?</strong></h3>
-                    <p class="fs-4">Starting your scooter journey with iPakket is easy. You just need to download our app, sign up, and select the scooter rental option. Then, choose the scooter model you prefer and you're ready to go! You'll be able to enjoy the city at your own pace, without worrying about traffic or parking problems.</p>
+                    <p class="fs-4">Starting your scooter journey with iPakket is easy. You just need to download our
+                        app, sign up, and select the scooter rental option. Then, choose the scooter model you prefer
+                        and you're ready to go! You'll be able to enjoy the city at your own pace, without worrying
+                        about traffic or parking problems.</p>
                 </div>
-                <a type="button" href="./html/mobility.html" class="btn btn-carrier fw-bold border fs-5 border" style="background-color: #fba400;">Learn More!</a>
+                <a type="button" href="./html/mobility.html" class="btn btn-carrier fw-bold border fs-5 border"
+                    style="background-color: #fba400;">Learn More!</a>
             </div>
         </div>
     </section>
-        
+
     <section
         class="section-download container-fluid-header-sp d-flex p-2 m-auto justify-content-center align-items-centers"
         id="section-download">
@@ -410,5 +417,20 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 <script src="./js/app.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var navLinks = document.querySelectorAll("#navbarSupportedContent a");
+
+        navLinks.forEach(function(link) {
+            link.addEventListener("click", function() {
+                var navbarCollapse = document.getElementById("navbarSupportedContent");
+                if (navbarCollapse.classList.contains("show")) {
+                    navbarCollapse.classList.remove("show");
+                    console.log("Menú cerrado");
+                }
+            });
+        });
+    });
+</script>
 
 </html>

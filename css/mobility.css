@@ -215,7 +215,7 @@ body {
 }
  .scooters-section{
   width: 80%;
-  height: 80vh;
+  height: auto;
   margin: auto;
 } 
 
